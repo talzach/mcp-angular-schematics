@@ -1,0 +1,40 @@
+{
+  "name": "@talzach/mcp-angular-schematics",
+  "version": "1.0.3",
+  "description": "Model Context Protocol servers for Angular Schematics",
+  "license": "MIT",
+  "author": "Tal Zach (https://github.com/talzach)",
+  "homepage": "https://talzach/mcp-angular-schematics",
+  "bugs": "https://github.com/talzach/mcp-angular-schematics/issues",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "bin": {
+    "playwright-mcp-server": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && shx chmod +x dist/*.js",
+    "prepare": "npm run build",
+    "watch": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/talzach/mcp-angular-schematics.git"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.11.1"
+  },
+  "keywords": [
+    "Angular Schematics",
+    "AI",
+    "Claude MCP"
+  ],
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "^20.17.46",
+    "shx": "^0.4.0",
+    "typescript": "^5.8.2"
+  }
+}
