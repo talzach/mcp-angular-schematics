@@ -30,7 +30,7 @@ export function createToolDefinitions() {
           projectRoot: {
             type: "string",
             description:
-              "The root directory of the Angular project (where angular.json is located)",
+              "The root directory of the Angular project (where the nearest angular.json is located)",
           },
         },
         required: ["schematic", "name", "projectRoot"],
@@ -54,7 +54,7 @@ export function createToolDefinitions() {
           projectRoot: {
             type: "string",
             description:
-              "The root directory of the Angular project (where angular.json is located)",
+              "The root directory of the Angular project (where the nearest angular.json is located)",
           },
         },
         required: ["package", "projectRoot"],
@@ -105,7 +105,7 @@ export function createToolDefinitions() {
           projectRoot: {
             type: "string",
             description:
-              "The root directory of the Angular project (where angular.json is located)",
+              "The root directory of the Angular project (where the nearest angular.json is located)",
           },
         },
         required: ["target", "projectRoot"],
