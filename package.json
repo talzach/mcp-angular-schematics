@@ -1,6 +1,6 @@
 {
   "name": "@talzach/mcp-angular-schematics",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Model Context Protocol servers for Angular Schematics",
   "license": "MIT",
   "author": "Tal Zach (https://github.com/talzach)",
@@ -18,7 +18,7 @@
     "build": "tsc && shx chmod +x dist/*.js",
     "prepare": "npm run build",
     "watch": "tsc --watch",
-    "publish": "npm publish --access public"
+    "publish-npm": "npm publish --access public"
   },
   "repository": {
     "type": "git",
