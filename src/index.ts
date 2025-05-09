@@ -8,7 +8,7 @@ import { setupRequestHandlers } from "./requestHandler.js";
 async function runServer() {
   const server = new Server(
     {
-      name: "angular-schematics-mcp-server",
+      name: "angular-cli-mcp-server",
       version: "1.0.0",
     },
     {
@@ -28,7 +28,7 @@ async function runServer() {
   // Create transport and connect
   const transport = new StdioServerTransport();
   await server.connect(transport);
-  console.log("Angular Schematics MCP server is running and connected.");
+  console.log("Angular CLI MCP server is running and connected.");
 }
 
 runServer().catch((error) => {

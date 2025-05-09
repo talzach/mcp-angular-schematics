@@ -1,11 +1,11 @@
 {
-  "name": "@talzach/mcp-angular-schematics",
-  "version": "1.0.8",
-  "description": "Model Context Protocol servers for Angular Schematics",
+  "name": "@talzach/mcp-angular-cli",
+  "version": "1.0.9",
+  "description": "Model Context Protocol servers for Angular CLI",
   "license": "MIT",
   "author": "Tal Zach (https://github.com/talzach)",
-  "homepage": "https://talzach/mcp-angular-schematics",
-  "bugs": "https://github.com/talzach/mcp-angular-schematics/issues",
+  "homepage": "https://talzach/mcp-angular-cli",
+  "bugs": "https://github.com/talzach/mcp-angular-cli/issues",
   "types": "dist/index.d.ts",
   "type": "module",
   "bin": {
@@ -22,13 +22,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/talzach/mcp-angular-schematics.git"
+    "url": "https://github.com/talzach/mcp-angular-cli.git"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.11.1"
   },
   "keywords": [
-    "Angular Schematics",
+    "Angular CLI",
     "AI",
     "Claude MCP"
   ],

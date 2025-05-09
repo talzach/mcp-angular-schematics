@@ -2,7 +2,7 @@
   "mcpServers": {
     "playwright": {
       "command": "npx",
-      "args": ["-y", "@talzach/mcp-angular-schematics"]
+      "args": ["-y", "@talzach/mcp-angular-cli"]
     }
   }
 }

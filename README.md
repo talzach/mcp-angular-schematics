@@ -1,6 +1,6 @@
-# Angular Schematics MCP Server 🅰️
+# Angular CLI MCP Server 🅰️
 
-A Model Context Protocol server that provides Angular CLI schematics and workspace automation capabilities. This server enables LLMs and agents to interact with Angular projects, generate components/services, add packages, create new workspaces, and run custom architect targets via the Angular CLI.
+A Model Context Protocol server that provides Angular CLI and workspace automation capabilities. This server enables LLMs and agents to interact with Angular projects, generate components/services, add packages, create new workspaces, and run custom architect targets via the Angular CLI.
 
 ## Features
 
@@ -8,6 +8,8 @@ A Model Context Protocol server that provides Angular CLI schematics and workspa
 - Run `ng add` to add packages to your Angular workspace
 - Run `ng new` to create new Angular workspaces
 - Run `ng run` to execute custom architect targets
+- Run `ng update` to update Angular packages and dependencies
+
 - All via the Model Context Protocol (MCP) for agent/LLM integration
 
 ## Installation
@@ -15,13 +17,13 @@ A Model Context Protocol server that provides Angular CLI schematics and workspa
 You can install the package globally using npm:
 
 ```bash
-npm install -g @talzach/mcp-angular-schematics
+npm install -g @talzach/mcp-angular-cli
 ```
 
 Or use it locally in your project:
 
 ```bash
-npm install --save-dev @talzach/mcp-angular-schematics
+npm install --save-dev @talzach/mcp-angular-cli
 ```
 
 ## Usage
@@ -29,7 +31,7 @@ npm install --save-dev @talzach/mcp-angular-schematics
 You can run the server directly:
 
 ```bash
-npx @talzach/mcp-angular-schematics
+npx @talzach/mcp-angular-cli
 ```
 
 Or, if you want to use it as a custom MCP server in your agent or tool, configure it like this:
@@ -39,9 +41,9 @@ Or, if you want to use it as a custom MCP server in your agent or tool, configur
 ```json
 {
   "mcpServers": {
-    "angular-schematics": {
+    "angular-cli": {
       "command": "npx",
-      "args": ["-y", "@talzach/mcp-angular-schematics"]
+      "args": ["-y", "@talzach/mcp-angular-cli"]
     }
   }
 }
@@ -99,11 +101,9 @@ If you want to test or develop this server locally, you need to point your MCP s
 
 ```json
 {
-  "angular-schematics": {
+  "angular-cli": {
     "command": "node",
-    "args": ["/path/to/your/mcp-angular-schematics/dist/index.js"]
+    "args": ["/path/to/your/mcp-angular-cli/dist/index.js"]
   }
 }
 ```
-
-Make sure to update the path if your project is located elsewhere. This allows you to run and debug the MCP server directly from your local source code.
