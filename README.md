@@ -54,14 +54,14 @@ Or, if you want to use it as a custom MCP server in your agent or tool, configur
   {
     "schematic": "component",
     "name": "my-component",
-    "projectRoot": "/absolute/path/to/your/angular/project"
+    "appRoot": "/absolute/path/to/your/angular/project"
   }
   ```
 - **Add a package:**
   ```json
   {
     "package": "@angular/material",
-    "projectRoot": "/absolute/path/to/your/angular/project"
+    "appRoot": "/absolute/path/to/your/angular/project"
   }
   ```
 - **Create a new workspace:**
@@ -75,10 +75,35 @@ Or, if you want to use it as a custom MCP server in your agent or tool, configur
   ```json
   {
     "target": "app:build:production",
-    "projectRoot": "/absolute/path/to/your/angular/project"
+    "appRoot": "/absolute/path/to/your/angular/project"
   }
   ```
 
 ---
 
 **Star this repo if you find it useful!**
+
+## Publishing to npm
+
+To publish a new version of this package to npm, run:
+
+```bash
+npm run publish-npm
+```
+
+This will automatically build the project and publish it as a public package.
+
+## Develop
+
+If you want to test or develop this server locally, you need to point your MCP server configuration to your local build output. After building the project (e.g., with `npm run build`), set your MCP server file (e.g., `.mcp.json` or similar) to use the local `dist/index.js` file:
+
+```json
+{
+  "angular-schematics": {
+    "command": "node",
+    "args": ["/path/to/your/mcp-angular-schematics/dist/index.js"]
+  }
+}
+```
+
+Make sure to update the path if your project is located elsewhere. This allows you to run and debug the MCP server directly from your local source code.

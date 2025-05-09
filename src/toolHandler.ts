@@ -9,7 +9,7 @@ export async function handleToolCall(
   try {
     let command = "";
     let commandArgs: string[] = [];
-    let cwd = args.projectRoot || process.cwd();
+    let cwd = args.appRoot || process.cwd();
 
     switch (name) {
       case "ng_generate": {
