@@ -1,6 +1,6 @@
 {
   "name": "@talzach/mcp-angular-schematics",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Model Context Protocol servers for Angular Schematics",
   "license": "MIT",
   "author": "Tal Zach (https://github.com/talzach)",
