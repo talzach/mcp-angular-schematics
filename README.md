@@ -2,6 +2,10 @@
 
 A Model Context Protocol server that provides Angular CLI and workspace automation capabilities. This server enables LLMs and agents to interact with Angular projects, generate components/services, add packages, create new workspaces, and run custom architect targets via the Angular CLI.
 
+<a href="https://glama.ai/mcp/servers/@talzach/mcp-angular-cli">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@talzach/mcp-angular-cli/badge" alt="mcp-angular-cli MCP server" />
+</a>
+
 ## Features
 
 - Run `ng generate` to scaffold Angular artifacts (components, services, etc.)
